@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- CircleProgressView -->
+    <declare-styleable name="CircleProgressView">
+        <attr name="cpvProgressColor" format="color|reference"/>
+        <attr name="cpvProgressBackgroundColor" format="color|reference"/>
+        <attr name="cpvStrokeWidth" format="dimension"/>
+        <attr name="cpvProgress" format="float"/>
+        <attr name="cpvDg" format="reference"/>
+        <attr name="cpvDuration" format="integer"/>
+    </declare-styleable>
+</resources>
