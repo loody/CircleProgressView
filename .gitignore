@@ -38,7 +38,9 @@ captures/
 .idea/tasks.xml
 .idea/gradle.xml
 .idea/dictionaries
+.idea/misc.xml
 .idea/libraries
+.idea/markdown-navigator.xml
 
 # Keystore files
 # Uncomment the following line if you do not want to check your keystore files in.

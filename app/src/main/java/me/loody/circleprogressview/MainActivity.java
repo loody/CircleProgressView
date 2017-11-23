@@ -20,7 +20,7 @@ public class MainActivity extends Activity {
         circleProgressView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                progress += 0.1f;
+                progress += 0.2f;
                 if (progress > 1) {
                     progress = 0.1f;
                 }

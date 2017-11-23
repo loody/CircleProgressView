@@ -144,6 +144,7 @@ public class CircleProgressView extends View {
         if (pathMeasure == null) {
             return;
         }
+        final float total = pathMeasure.getLength();
         ValueAnimator valueAnimator = ValueAnimator.ofFloat(0, pathMeasure.getLength());
         valueAnimator.setDuration(duration);
         valueAnimator.setInterpolator(new LinearInterpolator());
@@ -153,9 +154,7 @@ public class CircleProgressView extends View {
             public void onAnimationUpdate(ValueAnimator valueAnimator) {
                 float value = (float) valueAnimator.getAnimatedValue();
                 pathMeasure.getPosTan(value, pathPoint, null);
-                float current = valueAnimator.getCurrentPlayTime();
-                float total = valueAnimator.getDuration();
-                percent = current / total;
+                percent = value / total;
                 postInvalidate();
             }
 
